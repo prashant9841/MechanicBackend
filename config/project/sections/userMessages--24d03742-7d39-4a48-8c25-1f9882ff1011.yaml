@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 06d7311a-370e-4367-ab47-4e38c4245b8d # messages
+handle: userMessages
+maxAuthors: 1
+name: 'User Messages'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
+    enabledByDefault: true
+    hasUrls: true
+    template: user-messages/_entry.twig
+    uriFormat: 'user-messages/{slug}'
+structure:
+  maxLevels: null
+  uid: 499c773f-b044-49e1-9adf-2fbd78408fd0
+type: structure

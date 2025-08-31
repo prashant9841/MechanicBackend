@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: mechanic
+instructions: null
+name: Mechanic
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'group:087f44a7-f8f2-4d79-bc45-aed02607d9e6' # Manager
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Users

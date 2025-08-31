@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: customer2
+instructions: null
+name: Customer2
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources:
+    - 'group:e3d56696-859e-4ef0-be1e-ff17f856d9d0' # Customer
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Users

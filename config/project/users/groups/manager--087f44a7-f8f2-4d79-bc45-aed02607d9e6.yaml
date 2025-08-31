@@ -1,0 +1,14 @@
+description: null
+handle: manager
+name: Manager
+permissions:
+  - 'createentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'deleteentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'deletepeerentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'deletepeerentrydrafts:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'saveentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'savepeerentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'savepeerentrydrafts:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'viewentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'viewpeerentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'viewpeerentrydrafts:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings

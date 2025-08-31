@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: 'Mechanicbackend Ddev'
+primary: true
+siteGroup: d8a32934-96c4-42dc-b853-4c0f88bbec8e # Mechanicbackend Ddev
+sortOrder: 1

@@ -1,0 +1,102 @@
+color: null
+fieldLayouts:
+  82f1395f-3124-44f4-98b2-e1ffd7adb66e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-31T01:23:57+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eaed0e59-d2a0-4908-ad44-de7ef0c1b408
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:28:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1205acf3-5730-40dc-ad8d-703224f9a9fd # Customer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Reg NO'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 451526d9-0093-4ac3-abba-3b4689df9674
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:28:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d979fbe-7d32-40c9-88d4-a516aed5cccd # Due Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ee68bcf-204a-413d-bd03-289bd14abeb0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:28:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d979fbe-7d32-40c9-88d4-a516aed5cccd # Due Date
+            handle: expectedDate
+            includeInCards: false
+            instructions: null
+            label: 'Expecte Date'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e78520b-d7d6-4712-86e2-529ed0f53886
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a843247a-ffee-494c-93ea-2bddb1b9f56a
+        userCondition: null
+handle: invoices
+hasTitleField: true
+icon: null
+name: Invoices
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,4 +1,4 @@
-name: boilerplate
+name: MechanicBackend
 type: craftcms
 docroot: public
 php_version: "8.3"

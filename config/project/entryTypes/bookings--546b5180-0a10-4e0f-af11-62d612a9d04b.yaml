@@ -1,0 +1,204 @@
+color: null
+fieldLayouts:
+  71dbd422-7061-4a64-b92c-6cfbd57c8f4e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-31T01:14:28+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b4ddfac3-e498-446a-98a5-8043aaa6f0b6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:17:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 06c03878-9272-4d84-b169-8f626e1460b9 # Expected Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ead1c954-804b-484f-acc2-8a43dffcdbd2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:22:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 89b426b3-21f6-40a6-8196-7c0190f3025f # Customer2
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 723a5240-8ac5-4422-9a6e-ae5fcf84e2d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c82f4a2f-91e1-4a48-a283-7c1b36412880 # Status
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dc7118d1-b85c-444a-8386-44e7c42fab84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 44081ed8-d13f-41bd-b5b8-783a94f34705 # Mechanic
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b48f646-6a5b-4872-a6e3-3318268a854d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 72837d69-c9e7-4272-b0b4-f5b576af9837 # Notes
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6c2fa36-9b47-4fb5-b608-bbf0cf437f12
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 90a28548-dddf-4a34-8e4d-5b91fa638606 # Service Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a49bada-7570-42dc-9d26-bed9ca6a83bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 01e6943f-08f9-4808-b6dc-34051c26ecf0 # Bookeing Time
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 530ca557-da49-42b0-9f04-76638ed1323e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 72837d69-c9e7-4272-b0b4-f5b576af9837 # Notes
+            handle: cost
+            includeInCards: false
+            instructions: null
+            label: 'Estimated Cost'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0174a9fb-f970-42ed-a2d6-cf0c05a1086d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:37:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: dc4a0039-1b70-4e67-ba01-0ecff719d18b # Invoice
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5957c527-1bd2-4ef0-a557-bec42573c65c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f38d5bc6-f40f-4024-aeba-4b684017923d
+        userCondition: null
+handle: bookings
+hasTitleField: true
+icon: null
+name: Bookings
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

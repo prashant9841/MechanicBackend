@@ -1,0 +1,36 @@
+description: null
+handle: admin
+name: Admin
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accesssitewhensystemisoff
+  - administrateusers
+  - assignuserpermissions
+  - 'createentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'deleteentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'deletepeerentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'deletepeerentrydrafts:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - deleteusers
+  - editusers
+  - impersonateusers
+  - moderateusers
+  - performupdates
+  - registerusers
+  - 'saveentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'savepeerentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'savepeerentrydrafts:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'utility:clear-caches'
+  - 'utility:db-backup'
+  - 'utility:deprecation-errors'
+  - 'utility:find-replace'
+  - 'utility:migrations'
+  - 'utility:php-info'
+  - 'utility:queue-manager'
+  - 'utility:system-messages'
+  - 'utility:system-report'
+  - 'utility:updates'
+  - 'viewentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'viewpeerentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'viewpeerentrydrafts:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - viewusers

@@ -1,156 +1,42 @@
-dateModified: 1745441432
+dateModified: 1756604782
 email:
-  fromEmail: $CRAFT_SYSTEM_EMAIL
-  fromName: $CRAFT_SITE_NAME
-  replyToEmail: null
-  template: _emails/system.twig
-  transportSettings:
-    host: $SMTP_HOST
-    password: $SMTP_PASSWORD
-    port: $SMTP_PORT
-    useAuthentication: '1'
-    username: $SMTP_USERNAME
-  transportType: craft\mail\transportadapters\Smtp
-fs:
-  image:
-    hasUrls: true
-    name: Image
-    settings:
-      path: dist/assets/images
-    type: craft\fs\Local
-    url: /dist/assets/images
+  fromEmail: prashant9841@gmail.com
+  fromName: 'Mechanicbackend Ddev'
+  transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    0a512079-228e-4c63-b2b4-c1e1860c8b54: Image # Image
-    2a18fd90-04b4-4e8b-97fb-4c62004615ba: Form # Form
-    2eb0dc5e-9a77-4ac7-9ca8-c933c11d65bc: 'Full Options Editor' # Full Options Editor
-    4da44348-361c-4c9b-aade-28becfcab387: 'Page Builder' # Page Builder
-    05fb432b-77b1-40bc-8ff7-56425ce230ad: 'Site Settings' # Site Settings
-    7b662bcd-ea91-4c91-86ce-c60348c664d1: Pages # Pages
-    7d3f6b7b-e86c-40ac-94ec-48b3a4974e3c: Home # Home
-    7da4c184-4c24-46df-aeac-06c87941a3d2: 'Header Navigation' # Header Navigation
-    8b610edc-f2dd-46b6-9597-96fcbb6d302a: Simple # Simple
-    08c386f4-5a41-4c9f-8282-f6785af06bfc: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
-    8dff61be-651f-4492-9ed0-9dd9769582aa: Hero # Hero
-    8e9ead31-e4e1-4bd3-9c20-ab57dab33a9c: Products # Products
-    18afc206-c397-4a60-bd93-bebe69611b1f: 'Footer Navigation' # Footer Navigation
-    19d6d897-1cde-4d59-914a-2bf8a23e7916: 'Public Schema' # Public Schema
-    48b7a9bb-c749-4e16-a67f-7d9345845600: 'Multi Line Text' # Multi Line Text
-    52f82401-25cc-43f9-b263-722cd62e945a: hero # hero
-    76f69ad0-274b-4dc8-b435-740916d804ef: TestMatrix # TestMatrix
-    546fae56-25d8-4cd4-8696-20f2782b3881: 'Single Line Text' # Single Line Text
-    590d56fb-3e84-49af-a788-efe2a66f949b: 'Page Builder' # Page Builder
-    3519ad67-d8f5-401c-a54f-79d253a3b98b: Image # Image
-    4162c5fc-73ec-4299-b9d2-3eb0ae698ef0: New # New
-    401590d1-1d18-4503-8baf-2560169e8c8f: Navigation # Navigation
-    43328633-207b-4555-b704-20798cfe5942: Errors # Errors
-    84792880-ee67-488c-b382-e2894d76fd72: Cards # Cards
-    a36687c0-47fa-46ad-8c43-47079d855003: 'Link Field' # Link Field
-    b384b21d-03e1-49a6-8740-142cf4d9977e: Home # Home
-    bbe42781-9d0a-46a1-9052-5e6ff1b2a5fb: 'Contact Form' # Contact Form
-    bc026fc0-1927-41f4-be0a-2e521733a3e8: 'Site Settings' # Site Settings
-    bd6637fe-941e-4091-90a2-b0bf833351f8: 'Hero Block' # Hero Block
-    d99bf7af-1eb1-4b77-814e-624eeec1a0e3: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
-    d7083cb8-47c6-4c39-83cf-1c67eac26e85: Card # Card
-    ddca42c6-5eea-4420-b3e0-3f0d332ebe6d: 'Text Editor' # Text Editor
-    e08f579c-0df8-4333-b155-fc9bb9f623a6: 'Simple Text Editor' # Simple Text Editor
-    e1e51f73-bcc5-4d9b-a626-c93dacc23cc0: Heading # Heading
-    e5f5c269-edf3-4e01-a7fc-f27360374782: Full # Full
-    ea2f7c18-13e4-46aa-a8d6-51fddd944c23: Cards # Cards
-    eb45846e-8fa2-45e3-9335-7a452debcb80: SEO # SEO
-    f15d3ace-62f5-4552-952c-1b67bfedb408: Entries # Entries
-    fbe5674e-8193-40ef-8c3c-878118bb63a4: 'Email Address' # Email Address
+    01e6943f-08f9-4808-b6dc-34051c26ecf0: 'Bookeing Time' # Bookeing Time
+    1fefc6f5-07ba-4872-9d39-a54142b16d0c: Invoices # Invoices
+    2d979fbe-7d32-40c9-88d4-a516aed5cccd: 'Due Date' # Due Date
+    06c03878-9272-4d84-b169-8f626e1460b9: 'Expected Date' # Expected Date
+    06d7311a-370e-4367-ab47-4e38c4245b8d: messages # messages
+    6daa3ceb-95bd-4544-9173-a67cf9d06f59: Invoices # Invoices
+    8ca7378c-8d3e-4433-aebd-0c7752590ed5: Simple # Simple
+    24d03742-7d39-4a48-8c25-1f9882ff1011: 'User Messages' # User Messages
+    76d12674-18ad-4ced-a174-101dd2e25f8e: Admin # Admin
+    77edc0e8-5484-4c5f-bd5f-754d9041e716: 'Public Schema' # Public Schema
+    087f44a7-f8f2-4d79-bc45-aed02607d9e6: Manager # Manager
+    89b426b3-21f6-40a6-8196-7c0190f3025f: Customer2 # Customer2
+    90a28548-dddf-4a34-8e4d-5b91fa638606: 'Service Type' # Service Type
+    546b5180-0a10-4e0f-af11-62d612a9d04b: Bookings # Bookings
+    929b82bc-c4d7-473f-857c-ea44cc6c8984: 'Mechanicbackend Ddev' # Mechanicbackend Ddev
+    1205acf3-5730-40dc-ad8d-703224f9a9fd: Customer # Customer
+    4744cb5b-ed79-4965-8c58-b4d292924cc9: 'Text Editor1' # Text Editor1
+    44081ed8-d13f-41bd-b5b8-783a94f34705: Mechanic # Mechanic
+    72837d69-c9e7-4272-b0b4-f5b576af9837: Notes # Notes
+    c82f4a2f-91e1-4a48-a283-7c1b36412880: Status # Status
+    d8a32934-96c4-42dc-b853-4c0f88bbec8e: 'Mechanicbackend Ddev' # Mechanicbackend Ddev
+    dc4a0039-1b70-4e67-ba01-0ecff719d18b: Invoice # Invoice
+    dfc02452-ba5b-4fd4-a114-66835c034135: Bookings # Bookings
+    e3d56696-859e-4ef0-be1e-ff17f856d9d0: Customer # Customer
 plugins:
-  admin-bar:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.1.0
-  assetusage:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
-  blur-hash:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
-  cloner:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  cp-field-inspect:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  diy-widget:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.1
-  dumper:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  elements-panel:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  field-manager:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  formie:
-    edition: standard
-    enabled: true
-    licenseKey: JTVPTRTTIIU8M5I9CR90PWH9
-    schemaVersion: 3.4.8
-  image-resizer:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
-  minify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  seo:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.2.0
-  smith:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  sprig:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
-  templatecomments:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  usermanual:
-    edition: standard
-    enabled: true
-    schemaVersion: 4.0.0
-    settings:
-      enabledSideBar: true
-      pluginNameOverride: null
-      section: 1
-      templateOverride: null
-  vite:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  wordsmith:
-    edition: standard
-    enabled: true
-    schemaVersion: 0.0.0.0
 system:
   edition: pro
   live: true
-  name: $CRAFT_SITE_NAME
-  retryDuration: null
+  name: 'Mechanicbackend Ddev'
   schemaVersion: 5.7.0.3
   timeZone: America/Los_Angeles

@@ -1,9 +1,0 @@
-siteUid: null
-sortOrder: 1
-template: docs/index.twig
-uriParts:
-  - docs/
-  -
-    - slug
-    - '[^\/]+'
-uriPattern: 'docs/<slug:[^\/]+>'
