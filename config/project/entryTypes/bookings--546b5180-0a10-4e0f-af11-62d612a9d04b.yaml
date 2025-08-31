@@ -93,7 +93,7 @@ fieldLayouts:
             fieldUid: 44081ed8-d13f-41bd-b5b8-783a94f34705 # Mechanic
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'This only for garrage, not visivle to user'
             label: null
             providesThumbs: false
             required: false
@@ -185,6 +185,23 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 5957c527-1bd2-4ef0-a557-bec42573c65c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T02:00:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1205acf3-5730-40dc-ad8d-703224f9a9fd # Customer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9f83652-4f92-43c9-b819-e4512934ef81
             userCondition: null
             warning: null
             width: 100
