@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: fullOptionsEditor
+instructions: null
+name: 'Full Options Editor'
+searchable: true
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: e5f5c269-edf3-4e01-a7fc-f27360374782 # Full
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

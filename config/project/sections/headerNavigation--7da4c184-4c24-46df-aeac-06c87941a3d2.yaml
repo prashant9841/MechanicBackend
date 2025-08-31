@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 401590d1-1d18-4503-8baf-2560169e8c8f # Navigation
+handle: headerNavigation
+maxAuthors: 1
+name: 'Header Navigation'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  08c386f4-5a41-4c9f-8282-f6785af06bfc: # $CRAFT_SITE_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: f3683a61-22d6-461c-8e62-81f8e8945551
+type: structure

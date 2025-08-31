@@ -1,0 +1,53 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 4da44348-361c-4c9b-aade-28becfcab387 # Page Builder
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - Page
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - DOC
+      -
+        - urlFormat
+        - '/docs/{slug}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - 'Dev Doc'
+      -
+        - urlFormat
+        - '/docs/{slug}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  08c386f4-5a41-4c9f-8282-f6785af06bfc: # $CRAFT_SITE_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/base.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 4c0a1eed-b32a-43d6-ad31-77d4dc6ba447
+type: structure

@@ -1,0 +1,178 @@
+#ddev-generated
+
+http:
+  routers:
+    
+    
+    prospa-web-80-http:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-80-http"
+      tls: false
+      entrypoints:
+        - http-8080
+    
+    
+    prospa-web-8080-http:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-8080-http"
+      tls: false
+      entrypoints:
+        - http-
+    
+    
+    prospa-web-8025-http:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-8025-http"
+      tls: false
+      entrypoints:
+        - http-8025
+    
+    
+    prospa-web-3000-http:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-3000-http"
+      tls: false
+      entrypoints:
+        - http-3001
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    prospa-web-80-https:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-80-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8443
+    
+    
+    prospa-web-8443-https:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-8443-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-
+    
+    
+    prospa-web-8025-https:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-8025-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8026
+    
+    
+    prospa-web-3000-https:
+      
+      rule: HostRegexp(`prospa.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "prospa-web-3000-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-3000
+    
+    
+
+  # autodetect won't be needed in Traefik 3 https://github.com/traefik/traefik/pull/9546
+  middlewares:
+    autodetect:
+      contentType:
+        autoDetect: false
+
+  services:
+    
+    prospa-web-80-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:80
+    
+    prospa-web-8080-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:8080
+    
+    prospa-web-8025-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:8025
+    
+    prospa-web-3000-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:3000
+    
+    prospa-web-80-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:80
+    
+    prospa-web-8443-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:8443
+    
+    prospa-web-8025-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:8025
+    
+    prospa-web-3000-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-prospa-web:3000
+    
+
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/prospa.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/prospa.key
+

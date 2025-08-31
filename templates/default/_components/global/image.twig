@@ -1,0 +1,85 @@
+{#{% include "_shared/image" with { 
+    image: image-array || ONLY WORKS WITH CRAFT ASSET OBJECTS,
+    ratio:  ratio, 
+    class: class,
+    size: size ['1920', '1200', '800', '400'] ,
+    format: format,
+    imgStyles: imgStyles
+}%} #}
+
+
+{# {% set image = image ?? [] %}     #}
+{# {{image | json_encode()}} #}
+{% set image = image ??  item.image[0] ?? entry.image[0] ?? '' %}
+
+{% set srcAttribute = srcAttribute ?? false %}
+{% set lazy = lazy ?? true %}
+
+{% set imgStyles ='' %}
+{% set thumb = thumb ?? false %}
+{% set aspectClass = (ratio is defined and ratio is numeric) ? 'aspect-[' ~ ratio|trim ~ ']' : 'aspect-auto' %}
+{% set size = size ?? [ '1920', '1200', '800', '600', '400'] %}
+{% set class = class ?? '' %}
+{% set format = format ?? '' %}
+{% set type = '' %}
+{% set alt = alt ?? null %}
+{% if alt %}
+    {% set thisAlt =  image.alt ?? image.title ?? ''  %}
+{% endif %}
+
+{% if format is same as 'jpg' %}
+    {% set type = 'image/jpg' %}
+    {% set format = 'jpg' %}
+    {% set quality = 95 %}
+{% else %}
+    {% set type = 'image/webp' %}
+    {% set format = 'webp' %}
+    {% set quality = 95 %}
+{% endif %}
+{% set options = {
+    format: format,
+    quality: quality,
+} %}
+
+{% if image is not empty  %}
+    {% if image.hasFocalPoint %}
+        {% set x = image.focalPoint | first * 100 ~ '%' %}
+        {% set y = image.focalPoint | last * 100 ~ '%' %}
+        {% set imgStyles = ' object-position: ' ~ [x, y]|join(' ') ~ ';' %}
+    {% else %}
+        {% set x = 'center' %}
+        {% set y = 'center' %}
+        {% set imgStyles = ' object-position: ' ~ [x, y]|join(' ') ~ ';' %}
+    {% endif %}
+    {% set src = image.url %}
+    {% set srcset = image.getSrcset( size, options ) %}
+{% else %}
+    {% set src = "https://via.placeholder.com/600x600" %}
+{% endif %}
+{% if image | length  %}
+    {# Define expected aspect ratio classes here so Tailwind can find them and generate a class #}
+    <div class="aspect-[4/3] aspect-square aspect-auto aspect-video hidden aspect-[9/5] aspect-[1.5]"></div>
+    <picture class="{{handle_ ?? ''}} h-full overflow-hidden w-full flex justify-center">
+        <img 
+            width="{{ image.width }}" 
+            height="{{ image.height }}" 
+            class="{{ class }} {{ aspectClass }} object-cover" 
+            style="{{imgStyles}}" 
+            alt=" {{ alt ?? thisAlt ?? '' }} "
+            {{thumb ? 'data-src=' ~ image.getUrl('thumb')  : ''}} 
+            type="{{type}} "
+            sizes="100vw"
+
+            {% if lazy %}
+                loading="lazy" 
+                data-srcset="{{ srcset }} "
+                data-blurhash="{{image | blurhash}}"
+                data-sizes="auto"   
+            {% else %}
+                loading="eager" 
+                src="{{ src }}"
+                srcset="{{ srcset }} "
+            {% endif %}     
+        >
+    </picture>
+{% endif %}

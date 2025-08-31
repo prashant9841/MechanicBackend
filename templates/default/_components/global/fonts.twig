@@ -1,0 +1,60 @@
+{% set fonts = {
+    gilroy: [
+        {
+            file: 'gilroy-light',
+            weight: 300,
+            style: 'normal'
+        },
+        {
+            file: 'gilroy-light-italic',
+            weight: 300,
+            style: 'italic'
+        },
+        {
+            file: 'gilroy-regular',
+            weight: 400,
+            style: 'normal'
+        },
+        {
+            file: 'gilroy-italic',
+            weight: 400,
+            style: 'italic'
+        },
+        {
+            file: 'gilroy-medium',
+            weight: 500,
+            style: 'normal'
+        },
+        {
+            file: 'gilroy-semibold',
+            weight: 600,
+            style: 'normal'
+        },
+        {
+            file: 'gilroy-extrabold',
+            weight: 800,
+            style: 'normal'
+        },
+    ]
+} %}
+
+{% for family, fonts in fonts %}
+    {% for font in fonts %}
+        <link rel="preload" href="{{ craft.vite.asset('fonts/'~ font.file ~'.woff2', true) }}" as="font" crossorigin>
+        <style>
+            @font-face {
+                font-family: "{{ family }}";
+                src: url("{{ craft.vite.asset('fonts/' ~ font.file ~ '.eot', true) }}");
+                src: local("{{ family }}"),
+                    url("{{ craft.vite.asset('fonts/' ~ font.file ~ '.eot?#iefix', true) }}") format("embedded-opentype"),
+                    url("{{ craft.vite.asset('fonts/' ~ font.file ~ '.woff2', true) }}") format("woff2"),
+                    url("{{ craft.vite.asset('fonts/' ~ font.file ~ '.woff', true) }}") format("woff"),
+                    url("{{ craft.vite.asset('fonts/' ~ font.file ~ '.ttf', true) }}") format("truety "),
+                    url("{{ craft.vite.asset('fonts/' ~ font.file ~ '.svg#' ~ font.file, true) }}") format("svg");
+                font-weight: {{ font.weight }};
+                font-style: {{ font.style }};
+                font-display: swap;
+            }
+        </style>
+    {% endfor %}
+{% endfor %}
