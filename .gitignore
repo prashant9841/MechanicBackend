@@ -74,6 +74,10 @@ lerna-debug.log*
 
 # Editor directories and files
 
+.gitlab-ci.yml
+2.sql
+package-lock.json
+
 .vscode/*
 !.vscode/extensions.json
 .idea

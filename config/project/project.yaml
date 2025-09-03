@@ -1,4 +1,4 @@
-dateModified: 1756935001
+dateModified: 1756936360
 email:
   fromEmail: prashant9841@gmail.com
   fromName: 'Mechanicbackend Ddev'
@@ -34,6 +34,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true
