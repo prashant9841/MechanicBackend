@@ -1,5 +1,3 @@
-{%- minify -%}
-
     <!doctype html>
     <html class="no-js" lang="{{ craft.app.language|slice(0,2) }}">
         <head>
@@ -23,16 +21,8 @@
             {% set siteSettings = craft.entries.section('siteSettings').one() %}
 
         </head>
-
-        
         <body class="flex flex-col min-h-screen {{entry is defined ? entry.slug ~ ' ' ~ entry.section : '' }}  {{ bodyClasses ?? '' }}" data-page="{{ page }}">
-        
-
 
             {% block body %}{% endblock %}
-
         </body>
-
     </html>
-
-{%- endminify -%}
