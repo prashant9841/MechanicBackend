@@ -38,8 +38,17 @@
                 <iframe src="{{entry.url}}" frameborder="0" class="w-full h-screen"></iframe>
             </div> #}
             <div class="w-full">
-                <div id="page" class="mt-4 border-b">
-                    <pre class="bg-red-50 p-8 font-mono "><code> {% include "docs/_components/gql" %}</code></pre>
+                <div id="page" class="mt-4 border-b grid grid-cols-1 md:grid-cols-2">
+                    <pre class="bg-red-50 p-8 font-mono border-r border-red-400">
+                        <code> {% include "docs/_components/gql" %}</code>
+                    </pre>
+                    <pre class="bg-red-50 p-8 font-mono ">
+                        {% include "docs/_components/gqlMutation" %}
+                    </pre>
+                    <div> {% include "docs/_components/gqlQueryTest" %} </div>
+                    <div> {% include "docs/_components/gqlMutationTest" %} </div>
+                    <div> {% include "docs/_components/allCustomers" %} </div>
+
                 </div>
                 {% for field in fields %}
                     {# {{className(field)}} #}

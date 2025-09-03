@@ -1,0 +1,73 @@
+<form id="mutationForm">
+<div class="errors">
+
+</div>
+    <label>
+        Entry ID (leave empty for new):
+        <input type="text" name="entryId" />
+    </label>
+    <br/>
+    <label>
+        Title:
+        <input type="text" name="title" />
+    </label>
+    <br/>    
+    <button type="submit">Submit Mutation</button>
+</form>
+
+<script>
+    let thisForm = document.querySelector('#mutationForm')
+
+
+    thisForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        let entryId = thisForm.querySelector('input[name="entryId"]').value
+        let title = thisForm.querySelector('input[name="title"]').value
+        let dateCreated = new Date().toISOString()
+
+        if (entryId === '') {
+            entryId = null
+        }
+
+
+        let variables = {
+            entryId: entryId,
+            title: title,
+            dateCreated: dateCreated
+        }
+
+
+        let body = JSON.stringify({
+            query: `
+                mutation MyMutation($entryId: ID, $title: String!) {
+                    save_{{ entry.section.handle}}_{{entry.type.handle}}_Entry(
+                        id: $entryId, 
+                        title: $title
+                    ) {
+                        id
+                        title
+                        dateCreated
+                    }
+                }
+            `,
+            variables: variables
+        })
+
+
+        fetch('/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer cl4cTYDOwQnQItLnFvD8LlwswERbARlL'
+            },
+            body: body
+        }).then(response => response.json()).then(data => {
+            if (data.errors) {
+                for(let i = 0; i < data.errors.length; i++) {
+                    thisForm.querySelector('.errors').appendChild(document.createElement('pre')).innerHTML = data.errors[i].message
+                }
+            }
+        })
+    })
+
+</script>

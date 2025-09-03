@@ -1,0 +1,95 @@
+<button class="fetchBtn px-4 py-2 border border-gray-200 "> Fetch One </button>
+<button class="fetchAllBtn px-4 py-2 border border-gray-200 "> Fetch All </button>
+
+<div class="result">
+
+</div>
+
+<script>
+    let fetchBtn = document.querySelector('.fetchBtn')
+    let fetchAllBtn = document.querySelector('.fetchAllBtn')
+    let result = document.querySelector('.result')
+    let queryThis =  JSON.stringify({
+        query: `query MyQuery {
+            entry(id: {{entry.id}}) {
+                ... on {{entry.type.handle}}_Entry {
+                    title
+                    dateCreated
+                    authors {
+                        id
+                        name
+                    }
+                    revisions(limit: 1, orderBy: "dateCreated desc") {
+                        id
+                        dateCreated
+                        authors {
+                            id
+                            name
+                        }
+                    }
+                }
+            }
+        }`
+    })
+    let queryAll =  JSON.stringify({
+        query: `query MyQuery {
+            entries(section: "{{entry.section.handle}}") {
+                ... on {{entry.type.handle}}_Entry {
+                    id
+                    title
+                    dateCreated
+                    authors {
+                        id
+                        name
+                    }
+                    revisions(limit: 1, orderBy: "dateCreated desc") {
+                        id
+                        dateCreated
+                        authors {
+                            id
+                            name
+                        }
+                    }
+                }
+            }
+        }`
+    })
+
+    fetchBtn.addEventListener('click', () => {
+        console.log(queryThis)
+        fetch('/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer cl4cTYDOwQnQItLnFvD8LlwswERbARlL'
+            },
+            body: queryThis
+        }).then(response => response.json()).then(data => {
+            console.log(data)
+            result.innerHTML = JSON.stringify(data.data.entry, null, 2)
+        })
+    })
+
+    fetchAllBtn.addEventListener('click', () => {
+        console.log(queryAll)
+        result.innerHTML = ''
+        fetch('/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer cl4cTYDOwQnQItLnFvD8LlwswERbARlL'
+            },
+            body: queryAll
+        }).then(response => response.json()).then(data => {
+            console.log(data)
+            for (let i = 0; i < data.data.entries.length; i++) {
+                result.appendChild(document.createElement('pre')).innerHTML = JSON.stringify(data.data.entries[i], null, 2)
+            }
+            // result.innerHTML = JSON.stringify(, null, 2)
+            if (data.errors) {
+                result.innerHTML = JSON.stringify(data.errors, null, 2)
+            }
+        })
+    })
+
+</script>
