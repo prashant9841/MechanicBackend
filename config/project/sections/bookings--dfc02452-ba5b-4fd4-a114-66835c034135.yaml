@@ -23,6 +23,6 @@ siteSettings:
   929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
     enabledByDefault: true
     hasUrls: true
-    template: bookings/_entry.twig
+    template: docs
     uriFormat: 'bookings/{slug}'
 type: channel
