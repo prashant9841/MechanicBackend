@@ -1,0 +1,26 @@
+isPublic: false
+name: All
+scope:
+  - 'sites.929b82bc-c4d7-473f-857c-ea44cc6c8984:read' # Mechanicbackend Ddev
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:read' # Bookings
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:read' # Invoices
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:read' # User Messages
+  - 'usergroups.everyone:read'
+  - 'usergroups.76d12674-18ad-4ced-a174-101dd2e25f8e:read' # Admin
+  - 'usergroups.e3d56696-859e-4ef0-be1e-ff17f856d9d0:read' # Customer
+  - 'usergroups.087f44a7-f8f2-4d79-bc45-aed02607d9e6:read' # Manager
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:edit' # Bookings
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:create' # Bookings
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:save' # Bookings
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:delete' # Bookings
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:edit' # Invoices
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:create' # Invoices
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:save' # Invoices
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:delete' # Invoices
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:edit' # User Messages
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:create' # User Messages
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:save' # User Messages
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:delete' # User Messages

@@ -1,4 +1,4 @@
-dateModified: 1756936360
+dateModified: 1756947002
 email:
   fromEmail: prashant9841@gmail.com
   fromName: 'Mechanicbackend Ddev'
@@ -27,6 +27,7 @@ meta:
     c82f4a2f-91e1-4a48-a283-7c1b36412880: Status # Status
     d8a32934-96c4-42dc-b853-4c0f88bbec8e: 'Mechanicbackend Ddev' # Mechanicbackend Ddev
     dc4a0039-1b70-4e67-ba01-0ecff719d18b: Invoice # Invoice
+    dd3b7495-e803-425e-85f8-ac1f4fef937c: All # All
     dfc02452-ba5b-4fd4-a114-66835c034135: Bookings # Bookings
     e3d56696-859e-4ef0-be1e-ff17f856d9d0: Customer # Customer
 plugins:
