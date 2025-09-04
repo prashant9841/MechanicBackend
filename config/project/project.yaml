@@ -1,4 +1,4 @@
-dateModified: 1756947002
+dateModified: 1756949243
 email:
   fromEmail: prashant9841@gmail.com
   fromName: 'Mechanicbackend Ddev'
@@ -8,10 +8,12 @@ meta:
     01e6943f-08f9-4808-b6dc-34051c26ecf0: 'Bookeing Time' # Bookeing Time
     1fefc6f5-07ba-4872-9d39-a54142b16d0c: Invoices # Invoices
     2d979fbe-7d32-40c9-88d4-a516aed5cccd: 'Due Date' # Due Date
+    3aacd1d4-40c1-4048-8a70-10dd5877f4b1: Vehicles # Vehicles
     06c03878-9272-4d84-b169-8f626e1460b9: 'Expected Date' # Expected Date
     06d7311a-370e-4367-ab47-4e38c4245b8d: messages # messages
     6daa3ceb-95bd-4544-9173-a67cf9d06f59: Invoices # Invoices
     8ca7378c-8d3e-4433-aebd-0c7752590ed5: Simple # Simple
+    16b8809b-cf02-47e9-8e2a-f65306335511: Basic # Basic
     24d03742-7d39-4a48-8c25-1f9882ff1011: 'User Messages' # User Messages
     76d12674-18ad-4ced-a174-101dd2e25f8e: Admin # Admin
     77edc0e8-5484-4c5f-bd5f-754d9041e716: 'Public Schema' # Public Schema
@@ -19,11 +21,15 @@ meta:
     89b426b3-21f6-40a6-8196-7c0190f3025f: Customer2 # Customer2
     90a28548-dddf-4a34-8e4d-5b91fa638606: 'Service Type' # Service Type
     546b5180-0a10-4e0f-af11-62d612a9d04b: Bookings # Bookings
+    602a369b-1aed-4575-9740-0d51b060a116: Workers # Workers
+    673bdc47-e6a7-41f4-b534-09d0ebb576d3: Stores # Stores
     929b82bc-c4d7-473f-857c-ea44cc6c8984: 'Mechanicbackend Ddev' # Mechanicbackend Ddev
     1205acf3-5730-40dc-ad8d-703224f9a9fd: Customer # Customer
     4744cb5b-ed79-4965-8c58-b4d292924cc9: 'Text Editor1' # Text Editor1
     44081ed8-d13f-41bd-b5b8-783a94f34705: Mechanic # Mechanic
     72837d69-c9e7-4272-b0b4-f5b576af9837: Notes # Notes
+    572530e9-9c0e-4e39-a1db-2c0e87c079e3: Profile # Profile
+    c4f77668-3928-40d1-b9f3-ca8b06c7b1ac: Notifications # Notifications
     c82f4a2f-91e1-4a48-a283-7c1b36412880: Status # Status
     d8a32934-96c4-42dc-b853-4c0f88bbec8e: 'Mechanicbackend Ddev' # Mechanicbackend Ddev
     dc4a0039-1b70-4e67-ba01-0ecff719d18b: Invoice # Invoice
@@ -31,10 +37,26 @@ meta:
     dfc02452-ba5b-4fd4-a114-66835c034135: Bookings # Bookings
     e3d56696-859e-4ef0-be1e-ff17f856d9d0: Customer # Customer
 plugins:
+  assetusage:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  diy-widget:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   vite:
     edition: standard
     enabled: true

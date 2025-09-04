@@ -1,20 +1,29 @@
-<form id="mutationForm">
-<div class="errors">
+<form id="mutationForm" class="flex flex-col gap-6">
+    <div class="errors bg-red-300 text-red-900 p-4">
 
-</div>
-    <label>
-        Entry ID (leave empty for new):
-        <input type="text" name="entryId" />
+    </div>
+    <label class="flex justify-between gap-8">
+        <span>
+            Entry ID (leave empty for new):
+        </span>
+        <input class="border flex w-full border-gray-500" type="text" name="entryId" />
     </label>
-    <br/>
-    <label>
-        Title:
-        <input type="text" name="title" />
+    <label class="flex justify-between gap-8">
+        <span>Title:</span>
+        <input class="border flex w-full border-gray-500" type="text" name="title" />
     </label>
-    <br/>    
-    <button type="submit">Submit Mutation</button>
+    <button type="submit" class="px-4 py-2 mx-auto border border-blue-600 bg-blue-50 text-blue-600 ">Submit {{ entry.section.name }}</button>
+
+    <div class="border-t border-blue-600"> Fields to create </div>
+    {% for field in fields %}
+        <div class="border-b border-blue-200">
+            {{ field.handle }}  ------ {{className(field)}}
+        </div>
+    {% endfor %}
+
 </form>
-
+<div id="queryDisplay">
+</div>
 <script>
     let thisForm = document.querySelector('#mutationForm')
 
@@ -52,6 +61,11 @@
             `,
             variables: variables
         })
+
+        let queryDisplay = document.querySelector('#queryDisplay')
+        queryDisplay.innerHTML = body
+
+
 
 
         fetch('/api', {

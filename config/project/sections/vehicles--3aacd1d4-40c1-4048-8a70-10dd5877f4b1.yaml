@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 06d7311a-370e-4367-ab47-4e38c4245b8d # messages
-handle: userMessages
+    uid: 16b8809b-cf02-47e9-8e2a-f65306335511 # Basic
+handle: vehicles
 maxAuthors: 1
-name: 'User Messages'
+name: Vehicles
 previewTargets:
   -
     __assoc__:
@@ -24,8 +24,8 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: docs
-    uriFormat: 'user-messages/{slug}'
+    uriFormat: 'vehicles/{slug}'
 structure:
   maxLevels: null
-  uid: 499c773f-b044-49e1-9adf-2fbd78408fd0
+  uid: da8ec920-8cb1-4d07-98ed-40e330e26f59
 type: structure

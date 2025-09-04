@@ -7,7 +7,10 @@ scope:
   - 'elements.inactive:read'
   - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:read' # Bookings
   - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:read' # Invoices
+  - 'sections.572530e9-9c0e-4e39-a1db-2c0e87c079e3:read' # Profile
+  - 'sections.673bdc47-e6a7-41f4-b534-09d0ebb576d3:read' # Stores
   - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:read' # User Messages
+  - 'sections.3aacd1d4-40c1-4048-8a70-10dd5877f4b1:read' # Vehicles
   - 'usergroups.everyone:read'
   - 'usergroups.76d12674-18ad-4ced-a174-101dd2e25f8e:read' # Admin
   - 'usergroups.e3d56696-859e-4ef0-be1e-ff17f856d9d0:read' # Customer
@@ -20,7 +23,19 @@ scope:
   - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:create' # Invoices
   - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:save' # Invoices
   - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:delete' # Invoices
+  - 'sections.572530e9-9c0e-4e39-a1db-2c0e87c079e3:edit' # Profile
+  - 'sections.572530e9-9c0e-4e39-a1db-2c0e87c079e3:create' # Profile
+  - 'sections.572530e9-9c0e-4e39-a1db-2c0e87c079e3:save' # Profile
+  - 'sections.572530e9-9c0e-4e39-a1db-2c0e87c079e3:delete' # Profile
+  - 'sections.673bdc47-e6a7-41f4-b534-09d0ebb576d3:edit' # Stores
+  - 'sections.673bdc47-e6a7-41f4-b534-09d0ebb576d3:create' # Stores
+  - 'sections.673bdc47-e6a7-41f4-b534-09d0ebb576d3:save' # Stores
+  - 'sections.673bdc47-e6a7-41f4-b534-09d0ebb576d3:delete' # Stores
   - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:edit' # User Messages
   - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:create' # User Messages
   - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:save' # User Messages
   - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:delete' # User Messages
+  - 'sections.3aacd1d4-40c1-4048-8a70-10dd5877f4b1:edit' # Vehicles
+  - 'sections.3aacd1d4-40c1-4048-8a70-10dd5877f4b1:create' # Vehicles
+  - 'sections.3aacd1d4-40c1-4048-8a70-10dd5877f4b1:save' # Vehicles
+  - 'sections.3aacd1d4-40c1-4048-8a70-10dd5877f4b1:delete' # Vehicles

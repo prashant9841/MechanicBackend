@@ -23,6 +23,6 @@ siteSettings:
   929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
     enabledByDefault: true
     hasUrls: true
-    template: invoices/_entry.twig
+    template: docs
     uriFormat: 'invoices/{slug}'
 type: channel

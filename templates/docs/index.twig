@@ -43,7 +43,7 @@
                         <code> {% include "docs/_components/gql" %}</code>
                     </pre>
                     <pre class="bg-red-50 p-8 font-mono ">
-                        {# {% include "docs/_components/gqlMutation" %} #}
+                        {% include "docs/_components/gqlMutations" %}
                     </pre>
                     <div> {% include "docs/_components/gqlQueryTest" %} </div>
                     <div> {% include "docs/_components/gqlMutationTest" %} </div>
@@ -55,7 +55,7 @@
                     <div id="{{field.handle}}" class="mt-16 border-b">
                         <div class="flex justify-between items-baseline">
                             <h3 class="font-bold text-3xl">{{field.name}}   </h3>
-                            <pre class="font-mono bg-slate-100 p-4"><code> {{field.handle}} </code></pre>
+                            <pre class="font-mono bg-slate-100 p-4"><code>{{field.handle}}</code></pre>
                         </div>
                         {% if className(field) is same as 'craft\\fields\\Matrix' %} 
                             {% for block in entry[field.handle].all() %}
@@ -68,7 +68,8 @@
                             {% include 'docs/_components/seo' %}
                         {% else %}
                             <p>Type: {{className(field)}}</p>
-                            <p>entry.{{field.handle}}</p>
+                            {# <p>entry.{{field.handle}}</p> #}
+                            <p>Admin Note {{field.instructions ?? '-------------------- > To add note, edit the field in the CP'}}</p>
                             {# <p>{{entry[field.handle] | json_encode}}</p> #}
                         {% endif %}
                     </div>
