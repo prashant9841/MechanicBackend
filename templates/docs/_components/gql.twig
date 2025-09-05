@@ -1,0 +1,11 @@
+query MyQuery {
+    entry(id: {{entry.id}}) {
+        ... on {{entry.type.handle}}_Entry {
+            title
+            dateCreated
+            {% for field in fields %}
+{{ field.handle }} 
+            {% endfor %}
+}
+    }
+}

@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 08b317f5-9408-4824-8305-a8ea86c8273d # SmartAlerts
+handle: smartAlerts
+maxAuthors: 1
+name: 'Smart Alerts'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
+    enabledByDefault: true
+    hasUrls: true
+    template: smart-alerts/_entry.twig
+    uriFormat: smart-alerts
+type: single

@@ -1,0 +1,11 @@
+{% if link %}
+    
+    {% set target = link ? link.type == 'url' ? 'target="_blank"' : '' : '' %}
+    <a href="{{ link }}"
+        class="{{classes ?? ''}}"
+        aria-label="{{ text }}"
+        {{target}}
+    >
+        {{text ?? 'View'}}
+    </a>
+{% endif %}

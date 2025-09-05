@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  06c9e4af-a172-42bd-aee1-d0444f0436a6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-05T00:28:47+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 562d37b4-991b-4d69-bf5f-147731e187f8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1e86809e-cdb1-4c5c-92ca-2eff83a275c2
+        userCondition: null
+handle: vehicle
+hasTitleField: true
+icon: null
+name: vehicle
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

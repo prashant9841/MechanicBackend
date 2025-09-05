@@ -1,0 +1,65 @@
+{
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "born05/craft-assetusage": "4.1.3",
+    "carlcs/craft-diywidget": "4.1.1",
+    "craftcms/ckeditor": "4.10.1",
+    "craftcms/cms": "5.7.1.1",
+    "dodecastudio/craft-blurhash": "3.0.4",
+    "ether/seo": "5.0.0",
+    "mmikkel/cp-field-inspect": "2.0.4",
+    "nystudio107/craft-minify": "^5.0",
+    "nystudio107/craft-templatecomments": "5.0.4",
+    "nystudio107/craft-vite": "5.0.1",
+    "putyourlightson/craft-elements-panel": "3.0.1",
+    "putyourlightson/craft-sprig": "3.6.1",
+    "roberskine/craft-user-manual": "5.0.4",
+    "studioespresso/craft-dumper": "^5.0.1",
+    "topshelfcraft/wordsmith": "^5.0.0",
+    "verbb/cloner": "^3.0.1",
+    "verbb/field-manager": "4.0.3",
+    "verbb/formie": "3.0.26",
+    "verbb/image-resizer": "4.0.3",
+    "verbb/smith": "^3.1.0",
+    "vlucas/phpdotenv": "^5.4.0",
+    "wbrowar/craft-admin-bar": "5.0.0"
+  },
+  "require-dev": {
+    "craftcms/generator": "^2.0.0",
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "craftcms/plugin-installer": true,
+      "yiisoft/yii2-composer": true,
+      "treeware/plant": true
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.2"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+    ]
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    },
+    {
+      "type": "path",
+      "url": "plugins/myfieldsmanager"
+    }
+  ]
+}

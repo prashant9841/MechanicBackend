@@ -1,0 +1,102 @@
+color: null
+fieldLayouts:
+  3e44f8fc-2fe9-4374-b691-fd66fd3db207:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-03T23:08:07+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9c574ab1-1096-402a-be90-262bbd5a1e4a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:35:44+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d9c43212-386f-4a4c-95a8-028bf3841d85 # Service Name
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83e08f80-80c2-4acd-a6bd-f2d53f68f612
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:35:44+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3ece584c-1fe1-4159-9b95-5ce3896bbb4c # Price
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d40d971-0eab-4fc0-aaac-18a6736d4969
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:36:17+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 72837d69-c9e7-4272-b0b4-f5b576af9837 # Notes
+            handle: null
+            includeInCards: false
+            instructions: '(for other type of repair and servces'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d55bbf4-2ab8-4860-9cb8-c087800a1b6d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 46351555-a4a1-4f61-a991-3e4421a08a03
+        userCondition: null
+handle: serviceTypeS
+hasTitleField: true
+icon: filter
+name: 'service type s'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

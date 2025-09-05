@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 019dd68a-8e16-430c-8bcc-817366cee990 # service type s
+handle: servicesType
+maxAuthors: 1
+name: 'Services type '
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
+    enabledByDefault: true
+    hasUrls: true
+    template: services-type/_entry.twig
+    uriFormat: 'services-type/{slug}'
+type: channel

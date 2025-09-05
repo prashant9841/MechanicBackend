@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  91eff048-453c-4d8e-81ec-796c11155e2d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-03T04:24:29+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e88e50e0-8993-4af6-8798-329922d8e787
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dfbd4f67-38ee-4449-8316-104c8f0ba0e9
+        userCondition: null
+handle: quotation
+hasTitleField: true
+icon: circle-dollar
+name: Quotation
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

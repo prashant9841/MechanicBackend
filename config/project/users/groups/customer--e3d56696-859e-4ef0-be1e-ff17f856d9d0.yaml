@@ -1,0 +1,7 @@
+description: null
+handle: customer
+name: Customer
+permissions:
+  - 'createentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'saveentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'viewentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings

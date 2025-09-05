@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: newbooking
+instructions: 'this will let create new booking (need attention here ) check the prototype page booking> new booking for demo'
+name: NewBooking
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,50 @@
+<footer class="bg-dark-grey text-white py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div class="md:col-span-1">
+            <div class="text-3xl font-bold text-white">Get in touch.</div>
+            {# {{siteSettings.phoneNumber | json_encode}} #}
+            {# <div class="mt-3">
+                <a href="tel:{{siteSettings.phoneNumber is defined ? siteSettings.phoneNumber : ''}}" class="nav-text text-white font-light">{{siteSettings.phoneNumber is defined ? siteSettings.phoneNumber : ''}}</a>
+            </div>
+            <div>
+                <a href="mailto:{{siteSettings.emailAddress ? siteSettings.emailAddress : ''}}" class="nav-text text-white font-light normal-case">{{siteSettings.emailAddress ? siteSettings.emailAddress : ''}}</a>
+            </div> #}
+        </div>
+        <div class="md:text-center col-span-1 md:col-span-3">
+            {# {% include '_components/logo.twig' with {
+                fill: '#FFFFFF',
+                width: '120',
+                height: '45',
+                class: 'mr-auto md:m-auto',
+            } %} #}
+            <div class="mt-2">We manage to get more.</div>
+        </div>
+        <nav class="max-md:mt-4 md:col-span-1">
+            <ul class="space-y-2">
+                {% set navItems = craft.entries.section('footerNavigation').all() %}
+                {% for navItem in navItems %}
+                    <li>
+                        {% set target = navItem.linkField ? navItem.linkField.type == 'url' ? 'target="_blank"' : '' : '' %}
+                        <a href="{{ navItem.linkField }}"
+                            class="nav-text text-white font-light {{ navItem.title|lower|trim|kebab == page ? ' active' : ''}}"
+                            aria-label="{{ navItem.title }}"
+                            {{target}}
+                        >
+                            {{ navItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+                {# <li><a href="{{ url('careers') }}" class="nav-text text-white font-light"  aria-label="Careers">Careers</a></li>
+                <li><a href="#" class="nav-text text-white font-light" aria-label="Sustainability">Sustainability</a></li>
+                <li><a href="#" class="nav-text text-white font-light" aria-label="Privacy Policy">Privacy Policy</a></li> #}
+            </ul>
+        </nav>
+        <div class="md:col-start-1 md:col-end-2 md:col-span-1 mt-4 md:mt-12 flex items-end">
+            <span class="text-sm text-white font-light uppercase">&copy; {{ now|date('Y') }} Prospa Limited.</span>
+        </div>
+        <div class="md:col-start-5 md:col-end-5 md:col-span-1 mt-4 md:mt-12 flex justify-end flex-col">
+            <div class="mb-2 text-sm text-white font-light uppercase">Total Orchard <br>Management by</div>
+            <img class="block w-20" src="{{ craft.vite.asset("images/eastpack-logo-white.png", true) }}" alt="Eastpack Logo">
+        </div>
+    </div>
+</footer>

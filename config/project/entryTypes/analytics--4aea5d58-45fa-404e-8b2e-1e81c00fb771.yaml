@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  be42ff9f-6908-4f7d-8a1c-9cbf9f3f939f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-03T04:29:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b1c03bc3-cb44-46a2-89c8-6cd54da0ce4e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6a07be64-2916-4d1c-9dd2-bc215c6478ac
+        userCondition: null
+handle: analytics
+hasTitleField: true
+icon: chart-pie-simple
+name: analytics
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

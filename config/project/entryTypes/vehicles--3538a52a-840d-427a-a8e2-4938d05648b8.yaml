@@ -1,0 +1,170 @@
+color: null
+fieldLayouts:
+  e1030b14-e67f-4bed-aac0-a656d7f19995:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-04T23:59:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 55be5746-794f-43e6-a080-54eb493eae71
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:28:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d4f9f2d8-933b-4325-b3a0-14649d9b9888 # License Plate
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f22317c-4205-45c7-940f-8a7e3af9e4b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:28:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4c497255-b611-4c78-9351-98d649aff421 # Make Model
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69865d45-70ee-413c-ad33-ee7bc67c43d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:28:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4b8a53b7-4a43-4db8-a727-c4db40129c88 # year
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 061aebbf-57c0-4bca-bfe0-0ccc482f8bcb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:28:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 60bcec33-ec0c-447a-a9bf-9349061efeb1 # milage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61383c08-8608-491b-b8d1-a7a82eb2c8da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:28:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 229b967e-3312-4314-b74b-ba06d7668b10 # WOFexpire
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 218f98d3-eb4b-4b83-bd1d-f15f306c021a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:28:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ff30ecc0-14b1-41bb-a165-a11f3430dada # regoexpire
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f7d6cb2c-fa80-4212-9e04-a05ce8a345e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:28:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e1d4a834-ae86-402f-b119-be2855518cd9 # owing customer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b59fdbb3-a487-4b31-886c-df7265164c6e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8cf6c882-3b53-4946-9035-a2707a40115e
+        userCondition: null
+handle: vehicles
+hasTitleField: true
+icon: car
+name: vehicles
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

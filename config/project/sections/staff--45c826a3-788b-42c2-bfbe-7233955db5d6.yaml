@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 5df761a0-6d5a-423d-8052-0bd962821921 # staff
+handle: staff
+maxAuthors: 1
+name: staff
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
+    enabledByDefault: true
+    hasUrls: true
+    template: staff/_entry.twig
+    uriFormat: 'staff/{slug}'
+type: channel

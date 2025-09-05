@@ -1,0 +1,66 @@
+{% set navItems = craft.entries.section('headerNavigation').all() %}
+
+<header class="z-20" x-data="{ isOpen: false }">
+    <nav class="mx-auto flex container items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <a href="{{ url('/') }}" class="-m-1.5 p-1.5">
+            <span class="sr-only">Prospa</span>
+            <img src="{{ craft.vite.asset('images/prospa-logo.avif', true) }}" width="200" height="63" alt="Prospa logo">
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" @click="isOpen = !isOpen" :aria-expanded="isOpen.toString()" aria-controls="mobile-menu" class="mobile-menu__toggle-button -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-dark-grey">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            {% for navItem in navItems %}
+                {% set target = navItem.linkField ? navItem.linkField.type == 'url' ? 'target="_blank"' : '' : '' %}
+                <a href="{{ navItem.linkField }}"
+                    class="nav-text{{ navItem.title|lower|trim|kebab == page ? ' active' : ''}}"
+                    aria-label="{{ navItem.title }}"
+                    {{target}}
+                >
+                    {{ navItem.title }}
+                </a>
+            {% endfor %}
+        </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div :class="{ 'mobile-menu--open': isOpen }" class="mobile-menu lg:hidden" role="dialog" aria-modal="true" id="mobile-menu" x-cloak>
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div @click="isOpen = false" class="mobile-menu__backdrop fixed inset-0 z-10"></div>
+        <div class="mobile-menu__nav fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Prospa</span>
+                    {# {% include '_components/logo.twig' with {
+                        fill: '#888B8D',
+                        width: '150',
+                        height: '48'
+                    } %} #}
+                </a>
+                <button @click="isOpen = false" type="button" :aria-expanded="isOpen.toString()" class="mobile-menu__toggle-button -m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                    {% for navItem in navItems %}
+                        <a href="{{ navItem.link }}"
+                            class="-mx-3 block rounded-lg px-3 py-2 nav-text{{ navItem.title|lower|trim|kebab == page ? ' active' : ''}}"
+                            aria-label="{{ navItem.title }}">
+                            {{ navItem.title }}
+                        </a>
+                    {% endfor %}    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

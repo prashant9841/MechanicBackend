@@ -1,0 +1,187 @@
+color: null
+fieldLayouts:
+  82f1395f-3124-44f4-98b2-e1ffd7adb66e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-31T01:23:57+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eaed0e59-d2a0-4908-ad44-de7ef0c1b408
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:28:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d979fbe-7d32-40c9-88d4-a516aed5cccd # Due Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ee68bcf-204a-413d-bd03-289bd14abeb0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-31T01:28:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d979fbe-7d32-40c9-88d4-a516aed5cccd # Due Date
+            handle: expectedDate
+            includeInCards: false
+            instructions: null
+            label: 'Expecte Date'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e78520b-d7d6-4712-86e2-529ed0f53886
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T09:26:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ad87c9e5-9aab-40ff-ba76-ea12af7231b4 # Email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8bc6f9df-76f2-440a-9883-7ed8b1a09a04
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T09:26:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: baec29c7-61f8-4901-8d21-6bae62a17eca # Estimated cost
+            handle: totalAmount
+            includeInCards: false
+            instructions: '(total amount of invoice'
+            label: 'Total Amount'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61873437-a868-49b0-95be-fbfeefd7674a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T09:26:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 48ce1514-7571-4fba-8329-9b2342d261cc # invoice number
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b4c0e4b-f763-43fe-861a-6b905bd5c097
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T09:26:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 61c8a866-9126-4d78-b3f1-19668b554bc8 # Phone number 
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a9d6448-519e-4731-94fe-7b171b8cda01
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T09:26:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 72837d69-c9e7-4272-b0b4-f5b576af9837 # Notes
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a6f4136-168e-4815-a645-b46779190b8c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-05T00:49:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: dd6b63d3-9bd8-42d8-9b69-c499d73dff5f # booking
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d183c69-798d-434e-a783-11cbac35ee1b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a843247a-ffee-494c-93ea-2bddb1b9f56a
+        userCondition: null
+handle: invoices
+hasTitleField: true
+icon: file-lines
+name: Invoices
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

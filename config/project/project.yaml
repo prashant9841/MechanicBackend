@@ -1,0 +1,95 @@
+dateModified: 1757033385
+email:
+  fromEmail: prashant9841@gmail.com
+  fromName: 'Mechanicbackend Ddev'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    01e6943f-08f9-4808-b6dc-34051c26ecf0: 'Bookeing Time' # Bookeing Time
+    1fefc6f5-07ba-4872-9d39-a54142b16d0c: Invoices # Invoices
+    2d979fbe-7d32-40c9-88d4-a516aed5cccd: 'Due Date' # Due Date
+    3ebf51d7-ee80-43ee-b830-eec0eda87e21: customer # customer
+    3ece584c-1fe1-4159-9b95-5ce3896bbb4c: Price # Price
+    4aea5d58-45fa-404e-8b2e-1e81c00fb771: analytics # analytics
+    4b8a53b7-4a43-4db8-a727-c4db40129c88: year # year
+    4c038e5a-dc30-4e3a-b3fa-8b5dd35101f8: 'Full name ' # Full name 
+    4c1ae176-33a3-4f3c-8ba9-8a5cd126c74e: 'Smart Alerts' # Smart Alerts
+    4c497255-b611-4c78-9351-98d649aff421: 'Make Model' # Make Model
+    5df761a0-6d5a-423d-8052-0bd962821921: staff # staff
+    6a01f02e-4819-48d0-98c4-28382ab0278f: vehicles(linked) # vehicles(linked)
+    06c03878-9272-4d84-b169-8f626e1460b9: 'Expected Date' # Expected Date
+    06d7311a-370e-4367-ab47-4e38c4245b8d: messages # messages
+    6daa3ceb-95bd-4544-9173-a67cf9d06f59: Invoices # Invoices
+    7a9645bd-0df8-465b-b67a-4e081f7cf3bc: vehicles # vehicles
+    7aafc674-ca9c-4e1f-b8d2-6b69c228797f: Customer # Customer
+    08b317f5-9408-4824-8305-a8ea86c8273d: SmartAlerts # SmartAlerts
+    8ca7378c-8d3e-4433-aebd-0c7752590ed5: Simple # Simple
+    8f049491-46f4-459c-8c2e-699f660f820f: vehicle # vehicle
+    019dd68a-8e16-430c-8bcc-817366cee990: 'service type s' # service type s
+    24d03742-7d39-4a48-8c25-1f9882ff1011: 'User Messages' # User Messages
+    38c6528b-4dc2-4371-8d94-19b13f8c4a1c: 'customer name' # customer name
+    45b9a4a0-7f77-42cb-a858-c57e6946cf2d: 'Dashboard overview' # Dashboard overview
+    45c826a3-788b-42c2-bfbe-7233955db5d6: staff # staff
+    48ce1514-7571-4fba-8329-9b2342d261cc: 'invoice number' # invoice number
+    60bcec33-ec0c-447a-a9bf-9349061efeb1: milage # milage
+    61c8a866-9126-4d78-b3f1-19668b554bc8: 'Phone number ' # Phone number 
+    76d12674-18ad-4ced-a174-101dd2e25f8e: Admin # Admin
+    77edc0e8-5484-4c5f-bd5f-754d9041e716: 'Public Schema' # Public Schema
+    87f7c7ae-3cbe-4310-9e1b-270d940f1bef: 'business name' # business name
+    087f44a7-f8f2-4d79-bc45-aed02607d9e6: Manager # Manager
+    90a28548-dddf-4a34-8e4d-5b91fa638606: 'Service Type' # Service Type
+    229b967e-3312-4314-b74b-ba06d7668b10: WOFexpire # WOFexpire
+    354e6d5b-0d30-4f26-8223-694597b9567c: staff # staff
+    546b5180-0a10-4e0f-af11-62d612a9d04b: Bookings # Bookings
+    0679f8f9-1056-4e47-9a64-00c84d7eeb8a: 'todays job' # todays job
+    739d9da1-ff90-4606-822b-c0cb90dac49f: Vehicles # Vehicles
+    879e88bc-5a1a-4c8c-98af-df2745ba7706: 'Customer ' # Customer 
+    929b82bc-c4d7-473f-857c-ea44cc6c8984: 'Mechanicbackend Ddev' # Mechanicbackend Ddev
+    3538a52a-840d-427a-a8e2-4938d05648b8: vehicles # vehicles
+    6747de80-8e60-46fa-bd86-80c5b76199ea: 'Quotation ' # Quotation 
+    16246e5b-2a26-465d-8259-d3b162c8b2f3: Quotation # Quotation
+    44081ed8-d13f-41bd-b5b8-783a94f34705: Mechanic # Mechanic
+    60530dff-782a-45e9-9ad3-5eff4142f1df: 'staff name' # staff name
+    72837d69-c9e7-4272-b0b4-f5b576af9837: Notes # Notes
+    48678527-5bda-4fce-a8b8-b94c353ba021: 'Services type ' # Services type 
+    ad87c9e5-9aab-40ff-ba76-ea12af7231b4: Email # Email
+    b00759d1-17c1-4501-8c3a-c1a636dcdbf8: 'history ' # history 
+    baec29c7-61f8-4901-8d21-6bae62a17eca: 'Estimated cost' # Estimated cost
+    c82f4a2f-91e1-4a48-a283-7c1b36412880: Status # Status
+    ca29fc9a-dddc-4670-af50-2071e221c176: inventory # inventory
+    d4f9f2d8-933b-4325-b3a0-14649d9b9888: 'License Plate' # License Plate
+    d8a32934-96c4-42dc-b853-4c0f88bbec8e: 'Mechanicbackend Ddev' # Mechanicbackend Ddev
+    d9c43212-386f-4a4c-95a8-028bf3841d85: 'Service Name' # Service Name
+    d29d45a6-fdd2-4f2a-b1b2-23d06a8aa5ba: Priority # Priority
+    dc4a0039-1b70-4e67-ba01-0ecff719d18b: Invoice # Invoice
+    dd6b63d3-9bd8-42d8-9b69-c499d73dff5f: booking # booking
+    dfc02452-ba5b-4fd4-a114-66835c034135: Bookings # Bookings
+    e1d4a834-ae86-402f-b119-be2855518cd9: 'owing customer' # owing customer
+    e3d56696-859e-4ef0-be1e-ff17f856d9d0: Customer # Customer
+    e4b9db8a-6ac2-4ea9-ba82-45192d24d8cb: Analytics # Analytics
+    e2240b7f-6593-4e9d-876a-73e5b2e405ee: NewBooking # NewBooking
+    eb859637-99c4-452a-8b55-c419d8dbeae2: 'business logo' # business logo
+    f9858a4a-116c-4952-958d-d2e384c22952: Inventory # Inventory
+    fb32cb4b-f1a7-42ab-9352-0e03750cb3bf: 'business address' # business address
+    fde35a7e-3f98-4a63-89dd-658a215562b3: Quotation # Quotation
+    fec4b9bd-753c-40db-99ba-64ac456922d7: 'Dashboard/Business overview' # Dashboard/Business overview
+    ff30ecc0-14b1-41bb-a165-a11f3430dada: regoexpire # regoexpire
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Mechanicbackend Ddev'
+  schemaVersion: 5.7.0.3
+  timeZone: America/Los_Angeles

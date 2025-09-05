@@ -1,0 +1,136 @@
+color: null
+fieldLayouts:
+  272e7357-4552-4342-bb8a-f690db18b423:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-03T04:28:43+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 314b5a6d-5854-494b-ab2c-9e1e1dd58305
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T09:30:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 61c8a866-9126-4d78-b3f1-19668b554bc8 # Phone number 
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47fa33c5-d489-4725-bb00-a8a57e038747
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T09:30:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 354e6d5b-0d30-4f26-8223-694597b9567c # staff
+            handle: staffid
+            includeInCards: false
+            instructions: null
+            label: staffid
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a23723f2-bec4-4b28-9c18-ff5ff78ebee0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-04T23:58:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 60530dff-782a-45e9-9ad3-5eff4142f1df # staff name
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d4d728f-9b8c-4156-bc00-6279bce8eefd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-04T23:58:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0679f8f9-1056-4e47-9a64-00c84d7eeb8a # todays job
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'assignedBooking '
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f9c4597-28ba-4191-9470-ffb77db670e0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-04T23:58:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b00759d1-17c1-4501-8c3a-c1a636dcdbf8 # history 
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff1d6a4c-d824-404e-9f51-36cab47f068a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 510afc3e-8fa7-408d-b182-80ea3c6a8684
+        userCondition: null
+handle: staff
+hasTitleField: true
+icon: user-group
+name: staff
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

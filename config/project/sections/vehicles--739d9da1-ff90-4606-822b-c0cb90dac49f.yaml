@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 7a9645bd-0df8-465b-b67a-4e081f7cf3bc # vehicles
+handle: vehicles
+maxAuthors: 1
+name: Vehicles
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
+    enabledByDefault: true
+    hasUrls: true
+    template: vehicles/_entry.twig
+    uriFormat: 'vehicles/{slug}'
+type: channel

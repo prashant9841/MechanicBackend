@@ -1,0 +1,178 @@
+#ddev-generated
+
+http:
+  routers:
+    
+    
+    boilerplate-web-80-http:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-80-http"
+      tls: false
+      entrypoints:
+        - http-8080
+    
+    
+    boilerplate-web-8080-http:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-8080-http"
+      tls: false
+      entrypoints:
+        - http-
+    
+    
+    boilerplate-web-8025-http:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-8025-http"
+      tls: false
+      entrypoints:
+        - http-8025
+    
+    
+    boilerplate-web-3000-http:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-3000-http"
+      tls: false
+      entrypoints:
+        - http-3001
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    boilerplate-web-80-https:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-80-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8443
+    
+    
+    boilerplate-web-8443-https:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-8443-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-
+    
+    
+    boilerplate-web-8025-https:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-8025-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8026
+    
+    
+    boilerplate-web-3000-https:
+      
+      rule: HostRegexp(`boilerplate.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "boilerplate-web-3000-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-3000
+    
+    
+
+  # autodetect won't be needed in Traefik 3 https://github.com/traefik/traefik/pull/9546
+  middlewares:
+    autodetect:
+      contentType:
+        autoDetect: false
+
+  services:
+    
+    boilerplate-web-80-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:80
+    
+    boilerplate-web-8080-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:8080
+    
+    boilerplate-web-8025-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:8025
+    
+    boilerplate-web-3000-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:3000
+    
+    boilerplate-web-80-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:80
+    
+    boilerplate-web-8443-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:8443
+    
+    boilerplate-web-8025-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:8025
+    
+    boilerplate-web-3000-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-boilerplate-web:3000
+    
+
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/boilerplate.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/boilerplate.key
+

@@ -1,0 +1,33 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    handle: customercu
+    name: Customercu
+    uid: 7aafc674-ca9c-4e1f-b8d2-6b69c228797f # Customer
+handle: customer
+maxAuthors: 1
+name: 'Customer '
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
+    enabledByDefault: true
+    hasUrls: true
+    template: customer/_entry.twig
+    uriFormat: 'customer/{slug}'
+structure:
+  maxLevels: null
+  uid: 2c74c1ff-ca62-4e67-81a1-df61ffb9f332
+type: structure

@@ -1,0 +1,72 @@
+<div class="py-4 border-b">
+    <div class="flex justify-between items-baseline">
+      <div class="text-xl font-bold"> Block Type: {{block.type.name}}</div>
+      <pre class="font-mono bg-slate-100 p-4"><code> {{block.type.handle}} </code></pre>
+    </div>
+    <p>Template Location: '_partials/entry/{{block.type.handle}}'</p>
+    <p>Type: {{className(block)}}</p>
+    <div class="frontend bg-red-50">
+      {% if craft.app.version | split('.')[0] == '5' %}
+          {{ block.render() }}
+      {% endif %}
+    </div>
+    Fields:
+    <ul class="pl-8 list-decimal">
+        <li>Title: 'title'</li>
+        {% for field in block.getFieldLayout().customFields %}
+            <li>
+            <p> {{field.name}}: '{{field.handle}}' (Type: {{className(field)}}) </p> 
+            {% if className(field) is same as 'craft\\fields\\Matrix' %} 
+                <ul class="list-[lower-alpha] pl-8">
+                    {% set thisBlock = block.getFieldValue(field.handle).one() %}
+                    <p class="font-bold"> Block Type: {{thisBlock.type.name}} </p>
+                    <p> Template Location: '_partials/entry/{{thisBlock.type.handle}}' </p>
+                    <p>Fields:</p>
+                    <ul class="pl-8 list-decimal">
+                        <li>Title: 'title'</li>
+                        {% for item in thisBlock.getFieldLayout().customFields %}
+                            <li> {{item.name}}: '{{item.handle}}' (Type: {{className(item)}}) </li> 
+                        {% endfor %}
+                    </ul>
+                </ul>
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% set gqlQuery = field.handle~ "{\n    ... on " ~ block.type.handle|camel ~ "_Entry {\n        __typename\n        title\n" %}
+
+{% for field in block.getFieldLayout().customFields %}
+  {% set type = className(field) %}
+  {% set gqlField = field.handle %}
+  {% switch type %}
+  {% case 'craft\\fields\\Matrix' %}
+    {% set gqlQuery = gqlQuery ~ "        " ~ gqlField ~ " {\n            ... on " %}
+    {% set matrixBlocks = block.getFieldValue(gqlField).all() %}
+    {% if matrixBlocks|length %}
+      {% set firstBlock = matrixBlocks[0] %}
+      {% set gqlQuery = gqlQuery ~ firstBlock.type.handle|camel ~ "_Entry {\n                __typename \n                title \n" %}
+      {% for item in firstBlock.getFieldLayout().customFields %}
+        {% switch className(item) %}
+          {% case 'craft\\fields\\Assets' %}
+            {% set gqlQuery = gqlQuery ~ "                " ~ item.handle ~ " {\n                    url @transform (width: 600)\n                }\n" %}
+          {% default %}
+            {% set gqlQuery = gqlQuery ~ "                " ~ item.handle ~ "\n" %}
+        {% endswitch %}
+      {% endfor %}
+      {% set gqlQuery = gqlQuery ~ "            }\n" %}
+    {% endif %}
+    
+    {% set gqlQuery = gqlQuery ~ "        }\n" %}
+    
+  {% case 'craft\\fields\\Assets' %}
+    {% set gqlQuery = gqlQuery ~ "        " ~ gqlField ~ " {\n            url @transform (width: 1900)\n        }\n" %}
+  {% default %}
+    {% set gqlQuery = gqlQuery ~ "        " ~ gqlField ~ "\n" %}
+{% endswitch %}
+
+{% endfor %}
+
+{% set gqlQuery = gqlQuery ~ "    }\n}" %}
+<pre class="bg-red-50 p-8 font-mono ">{{ gqlQuery }}</pre>

@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  43c84504-a4c5-4b9a-b6a3-b5466b438057:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-03T04:25:53+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 997c2fc4-7b4d-4a69-bab1-b1293c4ed356
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 311f6f80-50f1-4223-af06-da2d59af1be7
+        userCondition: null
+handle: dashboardOverview
+hasTitleField: true
+icon: eye
+name: 'Dashboard overview'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,71 @@
+{% extends 'docs/_layouts/global' %}
+
+{% set entry = craft.entries.slug(craft.app.request.getSegment(2)).one() %}
+{% set page = 'home' %}
+{% set bodyClasses = 'bg-lighter-grey' %}
+
+{% block site %}
+    {% set fields = entry.getFieldLayout().customFields %}
+    <div class="px-16 relative ">
+        <div class="sticky top-0 w-1/6 h-0 ">
+            <ul class="flex flex-col gap-4 pt-16">
+                <li>
+                    <a href="#page" class="hover:font-bold"> {{entry.title}} </a>
+                </li>
+                {% for field in fields %}
+                    <li>
+                        <a href="#{{field.handle}}" class="hover:font-bold"> {{field.name}} </a>
+
+                        {% if className(field) is same as 'craft\\fields\\Matrix' %}
+                            {# {{field | json_encode}} #}
+                            <ul class="list-[lower-alpha] pl-8">
+                                {% for item in entry[field.handle].all() %}
+                                    <li><a href="#{{item.type.handle}}"> {{item.type.name }} </a></li>
+                                    {# {{ }}
+                                    {% for subField in item.getFieldLayout().customFields %}
+                                        {{ subField.handle }} {{ subField.name }}
+                                    {% endfor %} #}
+                                {% endfor %}
+                                </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+            {# <iframe src="{{entry.url}}" frameborder="0" class="w-full h-screen"></iframe> #}
+        </div>
+        <div class="w-5/6 ml-auto flex flex-col justify-end mb-24">
+            {# <div class="w-full">
+                <iframe src="{{entry.url}}" frameborder="0" class="w-full h-screen"></iframe>
+            </div> #}
+            <div class="w-full">
+                <div id="page" class="mt-4 border-b">
+                    <pre class="bg-red-50 p-8 font-mono "><code> {% include "docs/_components/gql" %}</code></pre>
+                </div>
+                {% for field in fields %}
+                    {# {{className(field)}} #}
+                    <div id="{{field.handle}}" class="mt-16 border-b">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-bold text-3xl">{{field.name}}   </h3>
+                            <pre class="font-mono bg-slate-100 p-4"><code> {{field.handle}} </code></pre>
+                        </div>
+                        {% if className(field) is same as 'craft\\fields\\Matrix' %} 
+                            {% for block in entry[field.handle].all() %}
+                                <div id="{{block.type.handle}}" class="mt-4 border-b">
+                                    {% include 'docs/_components/matrix' %}
+                                </div>
+                            {% endfor %}
+                        {% elseif className(field) is same as 'ether\\seo\\fields\\SeoField' %}
+                            <p>Type: {{className(field)}}</p>
+                            {% include 'docs/_components/seo' %}
+                        {% else %}
+                            <p>Type: {{className(field)}}</p>
+                            <p>entry.{{field.handle}}</p>
+                            {# <p>{{entry[field.handle] | json_encode}}</p> #}
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}

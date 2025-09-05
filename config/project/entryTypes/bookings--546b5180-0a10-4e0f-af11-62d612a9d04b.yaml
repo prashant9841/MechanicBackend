@@ -1,0 +1,255 @@
+color: null
+fieldLayouts:
+  71dbd422-7061-4a64-b92c-6cfbd57c8f4e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-03T05:01:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aead805a-8b1d-42a8-aaa6-a5cfd17630e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T05:01:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 01e6943f-08f9-4808-b6dc-34051c26ecf0 # Bookeing Time
+            handle: null
+            includeInCards: false
+            instructions: 'Scheduled time for the service.'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 933a40dc-d313-47ff-8d5d-06294300a050
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T05:01:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 44081ed8-d13f-41bd-b5b8-783a94f34705 # Mechanic
+            handle: null
+            includeInCards: false
+            instructions: 'Assign a mechanic only admin login could do it'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ec7be0fc-5fcf-47df-983b-e24ff409caf9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T05:01:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d29d45a6-fdd2-4f2a-b1b2-23d06a8aa5ba # Priority
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2f12698-f6a4-4a0c-b5f8-ae738fa14773
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T05:01:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: baec29c7-61f8-4901-8d21-6bae62a17eca # Estimated cost
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3cd719f-3ea7-4f61-bdef-97808f0248fe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T05:01:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 72837d69-c9e7-4272-b0b4-f5b576af9837 # Notes
+            handle: notes
+            includeInCards: false
+            instructions: 'Extra details like “customer mentioned brake noise”.'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2db8027a-3df8-4924-a65b-27926f73f5f5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T05:15:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: dc4a0039-1b70-4e67-ba01-0ecff719d18b # Invoice
+            handle: null
+            includeInCards: false
+            instructions: 'link invoice to booking once the job status is complete'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9980a7b7-5b89-4d88-a5c7-1fdfc1cc9c80
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T12:06:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c82f4a2f-91e1-4a48-a283-7c1b36412880 # Status
+            handle: bookingStatus2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e64901a-058e-40f1-b5aa-81628a20dce2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T12:06:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 354e6d5b-0d30-4f26-8223-694597b9567c # staff
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64dfaa8b-6dbb-4bee-b13a-2b63bf9f08b9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T12:06:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 90a28548-dddf-4a34-8e4d-5b91fa638606 # Service Type
+            handle: serviceType2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41cb71cd-e1de-45f1-b31f-d9149fa89c1a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T12:06:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6a01f02e-4819-48d0-98c4-28382ab0278f # vehicles(linked)
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 87ee0d00-9594-4a84-a862-1adf288fca6f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T12:06:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e2240b7f-6593-4e9d-876a-73e5b2e405ee # NewBooking
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a809e25-c9c0-44c1-86a9-6599f0dfffd2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-03T12:08:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3ebf51d7-ee80-43ee-b830-eec0eda87e21 # customer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 719547ad-bf00-40cd-a0ac-55e107ae522e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f38d5bc6-f40f-4024-aeba-4b684017923d
+        userCondition: null
+handle: bookings
+hasTitleField: true
+icon: book
+name: Bookings
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{customer} - {serviceType} - {bookeingTime|date("Y-m-d H:i")}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
