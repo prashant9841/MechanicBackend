@@ -1,4 +1,4 @@
-dateModified: 1756949243
+dateModified: 1756950137
 email:
   fromEmail: prashant9841@gmail.com
   fromName: 'Mechanicbackend Ddev'
@@ -15,6 +15,7 @@ meta:
     8ca7378c-8d3e-4433-aebd-0c7752590ed5: Simple # Simple
     16b8809b-cf02-47e9-8e2a-f65306335511: Basic # Basic
     24d03742-7d39-4a48-8c25-1f9882ff1011: 'User Messages' # User Messages
+    45cf0eb1-3b07-4f50-a8bb-9d53948f55cb: Home # Home
     76d12674-18ad-4ced-a174-101dd2e25f8e: Admin # Admin
     77edc0e8-5484-4c5f-bd5f-754d9041e716: 'Public Schema' # Public Schema
     087f44a7-f8f2-4d79-bc45-aed02607d9e6: Manager # Manager

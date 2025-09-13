@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 16b8809b-cf02-47e9-8e2a-f65306335511 # Basic
+handle: home
+maxAuthors: 1
+name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
+    enabledByDefault: true
+    hasUrls: true
+    template: docs/all.twig
+    uriFormat: home
+type: single

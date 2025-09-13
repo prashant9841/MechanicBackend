@@ -21,7 +21,11 @@
  */
 
 use craft\helpers\App;
-
 return [
-    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS'
+    'modules' => [
+        'sections-module' => [
+            'class' => \modules\SectionsModule::class,
+        ],
+    ],
+    // 'bootstrap' => ['sections-module'],
 ];
