@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 16b8809b-cf02-47e9-8e2a-f65306335511 # Basic
-handle: stores
+    uid: fde35a7e-3f98-4a63-89dd-658a215562b3 # Quotation
+handle: quotation
 maxAuthors: 1
-name: Stores
+name: Quotation
 previewTargets:
   -
     __assoc__:
@@ -13,19 +13,16 @@ previewTargets:
         - label
         - 'Primary entry page'
       -
-        - urlFormat
-        - '{url}'
-      -
         - refresh
         - '1'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
     enabledByDefault: true
     hasUrls: true
-    template: docs
-    uriFormat: 'stores/{slug}'
-structure:
-  maxLevels: null
-  uid: 9eefd0a5-5a1a-4a07-81f9-4650f1b8fed9
-type: structure
+    template: quotation/_entry.twig
+    uriFormat: 'quotation/{slug}'
+type: channel

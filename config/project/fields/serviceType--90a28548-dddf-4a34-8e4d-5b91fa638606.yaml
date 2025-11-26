@@ -4,59 +4,41 @@ instructions: null
 name: 'Service Type'
 searchable: false
 settings:
-  customOptions: false
-  options:
-    -
-      __assoc__:
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: false
+  typeSettings:
+    __assoc__:
+      -
+        - entry
         -
-          - label
-          - Servicing
+          __assoc__:
+            -
+              - sources
+              -
+                - 'section:48678527-5bda-4fce-a8b8-b94c353ba021' # Services type 
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
+      -
+        - url
         -
-          - value
-          - servicing
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - WOF
-        -
-          - value
-          - wof
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - Other
-        -
-          - value
-          - other
-        -
-          - icon
-          - ''
-        -
-          - color
-          - ''
-        -
-          - default
-          - ''
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
+              - ''
+  types:
+    - entry
+    - url
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Dropdown
+type: craft\fields\Link

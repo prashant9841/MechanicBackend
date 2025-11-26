@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  c8f2dace-251c-4a6a-8a6d-48725d1c3d6a:
+  43c84504-a4c5-4b9a-b6a3-b5466b438057:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-09-04T00:53:52+00:00'
+            dateAdded: '2025-09-03T04:25:53+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,17 +31,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 84acb25d-b818-4988-a724-9dc53c6a6d83
+            uid: 997c2fc4-7b4d-4a69-bab1-b1293c4ed356
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 5519b1b4-2a13-4f73-aa4e-eb94077dc65e
+        uid: 311f6f80-50f1-4223-af06-da2d59af1be7
         userCondition: null
-handle: basic
+handle: dashboardOverview
 hasTitleField: true
-icon: user-cowboy
-name: Basic
+icon: eye
+name: 'Dashboard overview'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

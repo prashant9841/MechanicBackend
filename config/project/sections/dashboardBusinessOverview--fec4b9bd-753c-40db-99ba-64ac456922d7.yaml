@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 16b8809b-cf02-47e9-8e2a-f65306335511 # Basic
-handle: vehicles
+    uid: 45b9a4a0-7f77-42cb-a858-c57e6946cf2d # Dashboard overview
+handle: dashboardBusinessOverview
 maxAuthors: 1
-name: Vehicles
+name: 'Dashboard/Business overview'
 previewTargets:
   -
     __assoc__:
@@ -13,19 +13,16 @@ previewTargets:
         - label
         - 'Primary entry page'
       -
-        - urlFormat
-        - '{url}'
-      -
         - refresh
         - '1'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
     enabledByDefault: true
-    hasUrls: true
-    template: docs
-    uriFormat: 'vehicles/{slug}'
-structure:
-  maxLevels: null
-  uid: da8ec920-8cb1-4d07-98ed-40e330e26f59
-type: structure
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

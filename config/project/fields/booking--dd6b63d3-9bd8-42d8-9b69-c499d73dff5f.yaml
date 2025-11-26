@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: mechanic
-instructions: null
-name: Mechanic
+handle: booking
+instructions: 'pull the information from the booking'
+name: booking
 searchable: false
 settings:
   fullGraphqlData: true
@@ -17,7 +17,6 @@ settings:
               - sources
               -
                 - 'section:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
-                - 'section:45c826a3-788b-42c2-bfbe-7233955db5d6' # staff
             -
               - showUnpermittedSections
               - ''

@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 16b8809b-cf02-47e9-8e2a-f65306335511 # Basic
-handle: notifications
+    uid: 4aea5d58-45fa-404e-8b2e-1e81c00fb771 # analytics
+handle: analytics
 maxAuthors: 1
-name: Notifications
+name: Analytics
 previewTargets:
   -
     __assoc__:
@@ -13,16 +13,16 @@ previewTargets:
         - label
         - 'Primary entry page'
       -
-        - urlFormat
-        - '{url}'
-      -
         - refresh
         - '1'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   929b82bc-c4d7-473f-857c-ea44cc6c8984: # Mechanicbackend Ddev
     enabledByDefault: true
     hasUrls: true
-    template: docs
-    uriFormat: 'notifications/{slug}'
+    template: analytics/_entry.twig
+    uriFormat: 'analytics/{slug}'
 type: channel

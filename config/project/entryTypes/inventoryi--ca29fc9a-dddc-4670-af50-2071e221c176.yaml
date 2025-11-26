@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  0ef2e6ee-8153-425e-ba90-2f2fc6a57ff5:
+  5bd5216b-e5f4-4e7f-97eb-611185cd75b2:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-08-31T01:39:51+00:00'
+            dateAdded: '2025-09-03T04:30:36+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,17 +31,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 12db1094-ea23-4dfe-95d5-a488f4f15332
+            uid: 315df38c-9fb6-4f15-8cf2-0075e03cc5e0
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 602a36f2-3860-49e5-b6a5-173dd04781ea
+        uid: 55ad5199-256f-4290-a92c-9984e44ed09d
         userCondition: null
-handle: messages
+handle: inventoryi
 hasTitleField: true
-icon: null
-name: messages
+icon: cart-flatbed-boxes
+name: inventory
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1,23 +1,24 @@
 columnSuffix: null
-handle: customer2
+handle: vehicleslinked
 instructions: null
-name: Customer2
+name: vehicles(linked)
 searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
   defaultPlacement: end
   maintainHierarchy: false
-  maxRelations: 1
+  maxRelations: null
   minRelations: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: true
-  sources:
-    - 'group:e3d56696-859e-4ef0-be1e-ff17f856d9d0' # Customer
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Users
+type: craft\fields\Entries

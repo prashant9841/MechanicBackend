@@ -2,6 +2,11 @@ description: null
 handle: customer
 name: Customer
 permissions:
+  - 'createentries:879e88bc-5a1a-4c8c-98af-df2745ba7706' # Customer 
   - 'createentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'saveentries:879e88bc-5a1a-4c8c-98af-df2745ba7706' # Customer 
   - 'saveentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
+  - 'viewentries:16246e5b-2a26-465d-8259-d3b162c8b2f3' # Quotation
+  - 'viewentries:1fefc6f5-07ba-4872-9d39-a54142b16d0c' # Invoices
+  - 'viewentries:879e88bc-5a1a-4c8c-98af-df2745ba7706' # Customer 
   - 'viewentries:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings

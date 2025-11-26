@@ -1,0 +1,71 @@
+isPublic: false
+name: All
+scope:
+  - 'sites.929b82bc-c4d7-473f-857c-ea44cc6c8984:read' # Mechanicbackend Ddev
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.fec4b9bd-753c-40db-99ba-64ac456922d7:read' # Dashboard/Business overview
+  - 'sections.4c1ae176-33a3-4f3c-8ba9-8a5cd126c74e:read' # Smart Alerts
+  - 'sections.e4b9db8a-6ac2-4ea9-ba82-45192d24d8cb:read' # Analytics
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:read' # Bookings
+  - 'sections.879e88bc-5a1a-4c8c-98af-df2745ba7706:read' # Customer 
+  - 'sections.f9858a4a-116c-4952-958d-d2e384c22952:read' # Inventory
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:read' # Invoices
+  - 'sections.16246e5b-2a26-465d-8259-d3b162c8b2f3:read' # Quotation
+  - 'sections.48678527-5bda-4fce-a8b8-b94c353ba021:read' # Services type 
+  - 'sections.45c826a3-788b-42c2-bfbe-7233955db5d6:read' # staff
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:read' # User Messages
+  - 'sections.739d9da1-ff90-4606-822b-c0cb90dac49f:read' # Vehicles
+  - 'globalsets.87f7c7ae-3cbe-4310-9e1b-270d940f1bef:read' # business name
+  - 'globalsets.eb859637-99c4-452a-8b55-c419d8dbeae2:read' # business logo
+  - 'globalsets.fb32cb4b-f1a7-42ab-9352-0e03750cb3bf:read' # business address
+  - 'usergroups.everyone:read'
+  - 'usergroups.76d12674-18ad-4ced-a174-101dd2e25f8e:read' # Admin
+  - 'usergroups.e3d56696-859e-4ef0-be1e-ff17f856d9d0:read' # Customer
+  - 'usergroups.087f44a7-f8f2-4d79-bc45-aed02607d9e6:read' # Manager
+  - 'sections.fec4b9bd-753c-40db-99ba-64ac456922d7:save' # Dashboard/Business overview
+  - 'sections.4c1ae176-33a3-4f3c-8ba9-8a5cd126c74e:save' # Smart Alerts
+  - 'sections.e4b9db8a-6ac2-4ea9-ba82-45192d24d8cb:edit' # Analytics
+  - 'sections.e4b9db8a-6ac2-4ea9-ba82-45192d24d8cb:create' # Analytics
+  - 'sections.e4b9db8a-6ac2-4ea9-ba82-45192d24d8cb:save' # Analytics
+  - 'sections.e4b9db8a-6ac2-4ea9-ba82-45192d24d8cb:delete' # Analytics
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:edit' # Bookings
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:create' # Bookings
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:save' # Bookings
+  - 'sections.dfc02452-ba5b-4fd4-a114-66835c034135:delete' # Bookings
+  - 'sections.879e88bc-5a1a-4c8c-98af-df2745ba7706:edit' # Customer 
+  - 'sections.879e88bc-5a1a-4c8c-98af-df2745ba7706:create' # Customer 
+  - 'sections.879e88bc-5a1a-4c8c-98af-df2745ba7706:save' # Customer 
+  - 'sections.879e88bc-5a1a-4c8c-98af-df2745ba7706:delete' # Customer 
+  - 'sections.f9858a4a-116c-4952-958d-d2e384c22952:edit' # Inventory
+  - 'sections.f9858a4a-116c-4952-958d-d2e384c22952:create' # Inventory
+  - 'sections.f9858a4a-116c-4952-958d-d2e384c22952:save' # Inventory
+  - 'sections.f9858a4a-116c-4952-958d-d2e384c22952:delete' # Inventory
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:edit' # Invoices
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:create' # Invoices
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:save' # Invoices
+  - 'sections.1fefc6f5-07ba-4872-9d39-a54142b16d0c:delete' # Invoices
+  - 'sections.16246e5b-2a26-465d-8259-d3b162c8b2f3:edit' # Quotation
+  - 'sections.16246e5b-2a26-465d-8259-d3b162c8b2f3:create' # Quotation
+  - 'sections.16246e5b-2a26-465d-8259-d3b162c8b2f3:save' # Quotation
+  - 'sections.16246e5b-2a26-465d-8259-d3b162c8b2f3:delete' # Quotation
+  - 'sections.48678527-5bda-4fce-a8b8-b94c353ba021:edit' # Services type 
+  - 'sections.48678527-5bda-4fce-a8b8-b94c353ba021:create' # Services type 
+  - 'sections.48678527-5bda-4fce-a8b8-b94c353ba021:save' # Services type 
+  - 'sections.48678527-5bda-4fce-a8b8-b94c353ba021:delete' # Services type 
+  - 'sections.45c826a3-788b-42c2-bfbe-7233955db5d6:edit' # staff
+  - 'sections.45c826a3-788b-42c2-bfbe-7233955db5d6:create' # staff
+  - 'sections.45c826a3-788b-42c2-bfbe-7233955db5d6:save' # staff
+  - 'sections.45c826a3-788b-42c2-bfbe-7233955db5d6:delete' # staff
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:edit' # User Messages
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:create' # User Messages
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:save' # User Messages
+  - 'sections.24d03742-7d39-4a48-8c25-1f9882ff1011:delete' # User Messages
+  - 'sections.739d9da1-ff90-4606-822b-c0cb90dac49f:edit' # Vehicles
+  - 'sections.739d9da1-ff90-4606-822b-c0cb90dac49f:create' # Vehicles
+  - 'sections.739d9da1-ff90-4606-822b-c0cb90dac49f:save' # Vehicles
+  - 'sections.739d9da1-ff90-4606-822b-c0cb90dac49f:delete' # Vehicles
+  - 'globalsets.87f7c7ae-3cbe-4310-9e1b-270d940f1bef:edit' # business name
+  - 'globalsets.eb859637-99c4-452a-8b55-c419d8dbeae2:edit' # business logo
+  - 'globalsets.fb32cb4b-f1a7-42ab-9352-0e03750cb3bf:edit' # business address

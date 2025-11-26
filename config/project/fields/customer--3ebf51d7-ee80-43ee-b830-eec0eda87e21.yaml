@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: mechanic
-instructions: null
-name: Mechanic
+handle: customer
+instructions: 'this could be used in booking invoice or quotation (but customer need to be registered first in order to use customer in dropdown)'
+name: customer
 searchable: false
 settings:
   fullGraphqlData: true
@@ -16,8 +16,7 @@ settings:
             -
               - sources
               -
-                - 'section:dfc02452-ba5b-4fd4-a114-66835c034135' # Bookings
-                - 'section:45c826a3-788b-42c2-bfbe-7233955db5d6' # staff
+                - 'section:879e88bc-5a1a-4c8c-98af-df2745ba7706' # Customer 
             -
               - showUnpermittedSections
               - ''

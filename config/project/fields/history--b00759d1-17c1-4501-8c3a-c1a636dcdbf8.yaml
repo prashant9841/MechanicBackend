@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: customer
-instructions: null
-name: Customer
+handle: history
+instructions: 'history of there job'
+name: 'history '
 searchable: false
 settings:
   byteLimit: null

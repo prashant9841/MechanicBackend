@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  0ef2e6ee-8153-425e-ba90-2f2fc6a57ff5:
+  91eff048-453c-4d8e-81ec-796c11155e2d:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-08-31T01:39:51+00:00'
+            dateAdded: '2025-09-03T04:24:29+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,17 +31,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 12db1094-ea23-4dfe-95d5-a488f4f15332
+            uid: e88e50e0-8993-4af6-8798-329922d8e787
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 602a36f2-3860-49e5-b6a5-173dd04781ea
+        uid: dfbd4f67-38ee-4449-8316-104c8f0ba0e9
         userCondition: null
-handle: messages
+handle: quotation
 hasTitleField: true
-icon: null
-name: messages
+icon: circle-dollar
+name: Quotation
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
